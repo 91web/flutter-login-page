@@ -149,7 +149,8 @@ class SuccessPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Success'),
-        backgroundColor: Colors.green,
+       backgroundColor: const Color(0xFFF7CA01),
+        elevation: 0,
       ),
       body: Center(
         child: Padding(
@@ -157,7 +158,7 @@ class SuccessPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Icon(Icons.check_circle, size: 100, color: Colors.green),
+              const Icon(Icons.check_circle, size: 100, color: Color(0xFFF7CA01)),
               const SizedBox(height: 24),
               const Text(
                 'Login Successful!',
@@ -170,7 +171,7 @@ class SuccessPage extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () => Navigator.pop(context),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green,
+                    backgroundColor: Color(0xFFF7CA01),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
